@@ -1,5 +1,5 @@
-﻿{
-    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v2.1/OSP_Qualification_Plan_Schema.json",
+{
+    "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.3/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Fluconazole",
@@ -122,124 +122,127 @@
             {
                 "Project": "Fluconazole",
                 "Simulation": "Ahonen_1997_fluconazole_400mg_iv_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1990_fluconazole_50mg_iv_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Shiba_1990_fluconazole_25mg_iv_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Sobue_2004_fluconazole_800mg_iv_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Yeates_1994_fluconazole_100mg_iv_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Palkama_1998_fluconazole_400mg_po_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Shiba_1990_fluconazole_100mg_po_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Varhe_1996_fluconazole_50mg_po_test",
-                "SectionId": 332
+                "SectionReference": "model-verification"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Palkama_1998_fluconazole_400mg_iv_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Ripa_1993_fluconazole_100mg_iv_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Shiba_1990_fluconazole_50mg_iv_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Ahonen_1997_fluconazole_400mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1990_fluconazole_200mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1990_fluconazole_300mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1990_fluconazole_400mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1990_fluconazole_50mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Brammer_1991_fluconazole_50mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Shiba_1990_fluconazole_25mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Shiba_1990_fluconazole_50mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Thorpe_1990_fluconazole_100mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Varhe_1996_fluconazole_100mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             },
             {
                 "Project": "Fluconazole",
                 "Simulation": "Varhe_1996_fluconazole_200mg_po_train",
-                "SectionId": 331
+                "SectionReference": "model-building"
             }
         ],
         "GOFMergedPlots": [
             {
                 "Title": "Goodness of fit plot for concentration in plasma.",
-                "SectionId": 32,
+                "SectionReference": "fluconazole-diagnostics-plots",
                 "Artifacts": [
                     "Plot",
                     "GMFE",
                     "Measure"
                 ],
-                "PlotType": "predictedVsObserved|residualsOverTime",
+                "PlotTypes": [
+                    "predictedVsObserved",
+                    "residualsOverTime"
+                ],
                 "Groups": [
                     {
                         "Caption": "Fluconazole iv (model building)",
@@ -431,83 +434,83 @@
             "Project": "Fluconazole",
             "Name": "Fluconazole",
             "Type": "Compound",
-            "SectionId": 31
+            "SectionReference": "fluconazole-final-input-parameters"
         },
         {
             "Name": "Fluconazole_Weibull_high dose",
             "Project": "Fluconazole",
             "Type": "Formulation",
-            "SectionId": 31
+            "SectionReference": "fluconazole-final-input-parameters"
         },
         {
             "Name": "Fluconazole_Weibull_low dose",
             "Project": "Fluconazole",
             "Type": "Formulation",
-            "SectionId": 31
+            "SectionReference": "fluconazole-final-input-parameters"
         },
         {
             "Name": "Fluconazole_Weibull_medium high dose",
             "Project": "Fluconazole",
             "Type": "Formulation",
-            "SectionId": 31
+            "SectionReference": "fluconazole-final-input-parameters"
         }
     ],
     "Sections": [
         {
-            "Id": 1,
-            "Title": "1 Introduction",
+            "Reference": "introduction",
+            "Title": "Introduction",
             "Content": "Content/Section1_Introduction.md"
         },
         {
-            "Id": 2,
-            "Title": "2 Methods",
+            "Reference": "methods",
+            "Title": "Methods",
             "Content": "Content/Section2_Methods.md",
             "Sections": [
                 {
-                    "Id": 21,
+                    "Reference": "modeling-strategy",
                     "Content": "Content/Section2.1_Modeling_Strategy.md",
-                    "Title": "2.1 Modeling strategy"
+                    "Title": "Modeling strategy"
                 },
                 {
-                    "Id": 22,
+                    "Reference": "data-used",
                     "Content": "Content/Section2.2_Data.md",
-                    "Title": "2.2 Data used"
+                    "Title": "Data used"
                 },
                 {
-                    "Id": 23,
+                    "Reference": "model-parameters-and-assumptions",
                     "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md",
-                    "Title": "2.3 Model parameters and assumptions"
+                    "Title": "Model parameters and assumptions"
                 }
             ]
         },
         {
-            "Id": 3,
+            "Reference": "results-and-discussion",
             "Content": "Content/Section3_Results_and_Discussion.md",
-            "Title": "3 Results and Discussion",
+            "Title": "Results and Discussion",
             "Sections": [
                 {
-                    "Id": 31,
+                    "Reference": "fluconazole-final-input-parameters",
                     "Content": "Content/Input_table.md",
-                    "Title": "3.1 Fluconazole final input parameters"
+                    "Title": "Fluconazole final input parameters"
                 },
                 {
-                    "Id": 32,
+                    "Reference": "fluconazole-diagnostics-plots",
                     "Content": "Content/GOF_diagnostics.md",
-                    "Title": "3.2 Fluconazole Diagnostics Plots"
+                    "Title": "Fluconazole Diagnostics Plots"
                 },
                 {
-                    "Id": 33,
-                    "Title": "3.3 Concentration-Time Profiles",
+                    "Reference": "ct-profiles",
+                    "Title": "Concentration-Time Profiles",
                     "Content": "Content/Concentration_time_profiles.md",
                     "Sections": [
                         {
-                            "Id": 331,
-                            "Title": "3.3.1 Model Building",
+                            "Reference": "model-building",
+                            "Title": "Model Building",
                             "Content": "Content/Concentration_time_profiles_building.md"
                         },
                         {
-                            "Id": 332,
-                            "Title": "3.3.2 Model Verification",
+                            "Reference": "model-verification",
+                            "Title": "Model Verification",
                             "Content": "Content/Concentration_time_profiles_verification.md"
                         }
                     ]
@@ -515,14 +518,14 @@
             ]
         },
         {
-            "Id": 4,
+            "Reference": "conclusion",
             "Content": "Content/Section4_Conclusion.md",
-            "Title": "4 Conclusion"
+            "Title": "Conclusion"
         },
         {
-            "Id": 5,
+            "Reference": "main-references",
             "Content": "Content/References.md",
-            "Title": "5 References"
+            "Title": "References"
         }
     ],
     "Intro": [
